@@ -5,5 +5,7 @@ client = discord.Client(intents=discord.Intents.default())
 @client.event
 async def on_ready():
     print("Bot online!")
+import os
 
-client.run("MTQ4MTY2MzMzNDA0NTU4NTU1OQ.Guix-v.MH3fV8p-4QBAHJ4_Qeb-cV1G2oj2_ILJqtUSSs")
+TOKEN = os.getenv("TOKEN")
+bot.run(TOKEN)
