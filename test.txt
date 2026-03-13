@@ -6,6 +6,5 @@ client = discord.Client(intents=discord.Intents.default())
 async def on_ready():
     print("Bot online!")
 import os
-
-TOKEN = os.getenv("TOKEN")
 bot.run(TOKEN)
+
